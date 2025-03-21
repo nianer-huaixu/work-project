@@ -1,0 +1,22 @@
+@tailwind components;
+
+.indexWrap{
+  .aboutM{
+    height: 100vh;
+    border: 1px solid blue;
+    .aboutMC{
+      border: 1px solid red;
+      p{
+        font-size: 20px;
+        i{
+          font-style: normal;
+          padding: 3px;
+          background-color: var(--activeColor);
+          border-radius: 6px;
+          margin-right: 4px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
