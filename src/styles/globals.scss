@@ -7,6 +7,8 @@
   --background: #ffffff;
   --foreground: #171717;
   --activeColor:#bb030f;
+  --webkit-transition: all 0.3s linear;
+  --transition: all 0.3s linear;
 }
 
 @theme inline {
@@ -25,6 +27,7 @@
 
 html{
   font-size: 160px;
+  font-family: Source Han Sans CN;
 }
 
 body {
@@ -34,7 +37,6 @@ body {
 }
 h1,h2,h3,h4,h5,h6,p,span,b,i,li,tr,img,video{
   user-select:none;/*禁止鼠标选中*/
-  font-family: Source Han Sans CN;
 }
 img,video{
   pointer-events: none;/*禁止图片所有点击事件*/
