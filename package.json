@@ -10,6 +10,8 @@
     "move": "xcopy /e /i .next\\static .next\\standalone\\.next\\static"
   },
   "dependencies": {
+    "mobx": "^6.13.7",
+    "mobx-react": "^9.2.0",
     "motion": "^12.5.0",
     "next": "15.2.2",
     "react": "^19.0.0",

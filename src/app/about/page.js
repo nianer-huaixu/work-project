@@ -1,5 +1,7 @@
+import Banner from "@/components/banner"
+
 export default function About(){
   return (
-    <div>this is about page</div>
+    <Banner suf='about'/>
   )
 }

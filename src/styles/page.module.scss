@@ -553,8 +553,230 @@
             }
           }
         }
-        
       }
+    }
+  }
+}
+.partnerWrap{
+  width: 100%;
+  height: 100vh;
+  background: url('https://www.yangdong.co:8443/yangdong-new/index/bg-5.png')no-repeat center;
+  .partnerM{
+    position: relative;
+    height: inherit;
+    width: 1400px;
+    img{
+      position: absolute;
+      z-index: 33;
+      &:nth-child(1){
+        width: 20%;
+        top: -2%;
+        left: -2%;
+      }
+      &:nth-child(2){
+        width: 28%;
+        left: 8%;
+        top: 2%;
+      }
+      &:nth-child(3){
+        width: 20%;
+        left: 32%;
+        top: 6%;
+      }
+      &:nth-child(4){
+        width: 24%;
+        left: 48%;
+        top: 10%;
+      }
+      &:nth-child(5){
+        width: 24%;
+        left: 64%;
+        top: -3%;
+      }
+      &:nth-child(6){
+        width: 23%;
+        right: -4%;
+        top: -4%;
+      }
+      &:nth-child(7){
+        width: 18%;
+        right: 4%;
+        top: 18%;
+      }
+      &:nth-child(8){
+        width: 26%;
+        left: -5%;
+        top: 20%;
+      }
+      &:nth-child(9){
+        width: 18%;
+        right: -5%;
+        top: 36%;
+      }
+      &:nth-child(10){
+        width: 14%;
+        left: 2%;
+        top: 55%;
+      }
+      &:nth-child(11){
+        width: 22%;
+        right: 0%;
+        top: 47%;
+      }
+      &:nth-child(12){
+        width: 10%;
+        right: 20%;
+        top: 65%;
+      }
+      &:nth-child(13){
+        width: 26%;
+        left: -5%;
+        bottom: -8%;
+      }
+      &:nth-child(14){
+        width: 26%;
+        left: 14%;
+        bottom: -5%;
+      }
+      &:nth-child(15){
+        width: 26%;
+        left: 30%;
+        bottom: -4%;
+      }
+      &:nth-child(16){
+        width: 15%;
+        left: 45%;
+        bottom: -4%;
+      }
+      &:nth-child(17){
+        width: 15%;
+        left: 54%;
+        bottom: 10%;
+      }
+      &:nth-child(18){
+        width: 25%;
+        left: 63%;
+        bottom: -10%;
+      }
+      &:nth-child(19){
+        width: 25%;
+        right: -5%;
+        bottom: -5%;
+      }
+      &:hover{
+        border:1px solid red;
+      }
+    }
+  }
+}
+.evaWrap{
+  width: 100%;
+  height: 100vh;
+  background: url('https://www.yangdong.co:8443/yangdong-new/index/bg-6.png')no-repeat center;
+  .evaM{
+    padding-top: 100px;
+    .evaMT{
+      display: flex;
+      justify-content: space-between;
+      .evaMTL{
+        display: flex;
+        img{
+          margin-right: 20px;
+        }
+        p{
+          font-size: 48px;
+          &:nth-child(3){
+            font-size: 30px;
+          }
+        }
+      }
+      .evaMTR{
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        div{
+          img{
+            margin: auto;
+          }
+          p{
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+    .evaImgW{
+      position: relative;
+      img{
+        position: absolute;
+        &:nth-child(1){
+          width: 32%;
+          top: 120px;
+        }
+        &:nth-child(2){
+          width: 30%;
+          top: 290px;
+        }
+        &:nth-child(3){
+          width: 35%;
+          top: 420px;
+        }
+        &:nth-child(4){
+          width: 26%;
+          top: 10px;
+          left: 30%;
+        }
+        &:nth-child(5){
+          width: 20%;
+          top: 140px;
+          left: 36%;
+        }
+        &:nth-child(6){
+          width: 30%;
+          top: 310px;
+          left: 34%;
+        }
+        &:nth-child(7){
+          width: 40%;
+          top: 20px;
+          right: 0;
+        }
+        &:nth-child(8){
+          width: 36%;
+          top: 190px;
+          right: 1%;
+        }
+        &:nth-child(9){
+          width: 32%;
+          top: 320px;
+          right: 0;
+        }
+        &:nth-child(10){
+          width: 34%;
+          top: 470px;
+          right: 30%;
+        }
+      }
+    }
+  }
+}
+.indexBW{
+  width: 100%;
+  height: 380px;
+  background: url('https://www.yangdong.co:8443/yangdong-new/index/bg-7.png')no-repeat;
+  div{
+    text-align: left;
+    padding-top: 100px;
+    p{
+      font-size: 30px;
+      color: #000000;
+      margin-bottom: 20px;
+    }
+    a{
+      display: block;
+      width: 718px;
+      height: 122px;
+      background: url('https://www.yangdong.co:8443/yangdong-new/index/b-img.png')no-repeat;
     }
   }
 }

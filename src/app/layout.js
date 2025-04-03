@@ -1,6 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google"
 import Header from "@/components/Header"
-import Footer from "@/components/Footer";
+import Footer from "@/components/Footer"
 
 import "../styles/globals.scss"
 
@@ -18,7 +18,6 @@ export const metadata = {
   title: "扬东铝业",
   description: "test",
 };
-
 export default function RootLayout({ children }) {
   return (
     <html lang="ch">
@@ -27,7 +26,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <Header/>
-        {children}
+          {children}
         <Footer/>
       </body>
     </html>

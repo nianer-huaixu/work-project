@@ -212,6 +212,9 @@ export default function Home() {
     backgroundColor: "#ff0088",
     borderRadius: 5,
   }
+  const imgStyle ={
+    positon:"absulute"
+  }
   const cardVariants = {
     offscreen: {
         y: 300,
@@ -259,6 +262,7 @@ export default function Home() {
       ]
     }
   ]
+  const evaData = ['1V1响应接待','极速发货','贴心售后','实力工厂']
   const [newIndex,setNewIndex] = useState(0)
   return (
     <div className={styles.indexWrap}>
@@ -321,58 +325,98 @@ export default function Home() {
           </div>
         </section>
         <section className={styles.newWrap}>
-            <div className={[styles.newWrapM,'main'].join(' ')}>
-              <div className={styles.newWrapMH}>
-                <div className={styles.newWrapMHL}>
-                  <h4>新闻咨询</h4>
-                  <p>了解扬东铝业最新资讯，定位行业最新动态！</p>
-                </div>
-                <div className={styles.newWrapMHR}>
-                  {newLabel.map((item,i)=>{
-                    return <a key={i}>
-                      <img src={URL + 'index/new-icon-'+ i +'.png'}/>
-                      {item.text}
-                    </a>
-                  })}
-                </div>
+          <div className={[styles.newWrapM,'main'].join(' ')}>
+            <div className={styles.newWrapMH}>
+              <div className={styles.newWrapMHL}>
+                <h4>新闻咨询</h4>
+                <p>了解扬东铝业最新资讯，定位行业最新动态！</p>
               </div>
-              <div className={styles.newWrapMC}>
-                  <div className={styles.newWrapMCL}>
-                    <div className={styles.newWrapMCLT}>
-                        <img src={URL + 'index/new-img-1.png'}/>
-                        <p>“精工品质，真诚合作”扬东集团客户好评不断诚信可靠</p>
-                    </div>
-                    <div className={styles.newWrapMCLB}>
-                      <div>
-                        <p>扬东集团被中国兵器工业集团纳入优选供应商名录</p>
-                        <p><i>2023-07-15</i><i>查看更多</i></p>
-                      </div>
-                      <div>
-                        <p>【喜讯】扬东集团荣获3A级企业信用等级证书</p>
-                        <p><i>2015-02-14</i><i>查看更多</i></p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className={styles.newWrapMCR}>
-                    <div>
-                      <img src={URL + 'index/new-img-2.png'}/>
-                      <p>西南铝为天舟三号提供多个铝合金材料</p>
-                      <p><i>2023-07-15</i></p>
-                    </div>
-                    <div>
-                      <img src={URL + 'index/new-img-2.png'}/>
-                      <p>西南铝为天舟三号提供多个铝合金材料</p>
-                      <p><i>2023-07-15</i></p>
-                    </div>
-                  </div>
+              <div className={styles.newWrapMHR}>
+                {newLabel.map((item,i)=>{
+                  return <a key={i}>
+                    <img src={URL + 'index/new-icon-'+ i +'.png'}/>
+                    {item.text}
+                  </a>
+                })}
               </div>
             </div>
+            <div className={styles.newWrapMC}>
+                <div className={styles.newWrapMCL}>
+                  <div className={styles.newWrapMCLT}>
+                      <img src={URL + 'index/new-img-1.png'}/>
+                      <p>“精工品质，真诚合作”扬东集团客户好评不断诚信可靠</p>
+                  </div>
+                  <div className={styles.newWrapMCLB}>
+                    <div>
+                      <p>扬东集团被中国兵器工业集团纳入优选供应商名录</p>
+                      <p><i>2023-07-15</i><i>查看更多</i></p>
+                    </div>
+                    <div>
+                      <p>【喜讯】扬东集团荣获3A级企业信用等级证书</p>
+                      <p><i>2015-02-14</i><i>查看更多</i></p>
+                    </div>
+                  </div>
+                </div>
+                <div className={styles.newWrapMCR}>
+                  <div>
+                    <img src={URL + 'index/new-img-2.png'}/>
+                    <p>西南铝为天舟三号提供多个铝合金材料</p>
+                    <p><i>2023-07-15</i></p>
+                  </div>
+                  <div>
+                    <img src={URL + 'index/new-img-2.png'}/>
+                    <p>西南铝为天舟三号提供多个铝合金材料</p>
+                    <p><i>2023-07-15</i></p>
+                  </div>
+                </div>
+            </div>
+          </div>
         </section>
-        <motion.div 
+        <section className={styles.partnerWrap}>
+          <div className={[styles.partnerM,'main'].join(' ')}>
+            {[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19].map((item,i)=>{
+              return <img key={i} src={URL + 'index/p-'+(i+1)+'.png'}/>
+            })}
+          </div>
+        </section>
+        <section className={styles.evaWrap}>
+          <div className={[styles.evaM,'main'].join(' ')}>
+            <div className={styles.evaMT}>
+              <div className={styles.evaMTL}>
+                <img src={URL + 'index/eva-l.png'}/>
+                <div>
+                  <p>他们说 ——</p>
+                  <p>THEY SAID</p>
+                  <p>海量口碑真实反馈来袭</p>
+                </div>
+              </div>
+              <div className={styles.evaMTR}>
+                {evaData.map((item,i)=>{
+                  return <div key={i}>
+                    <img src={URL +'index/eva-r-'+ (i+1) +".png"}/>
+                    <p>{item}</p>
+                  </div>
+                })}
+              </div>
+            </div>
+            <div className={styles.evaImgW}>
+              {[1,2,3,4,5,6,7,8,9,10].map((item)=>{
+                return <img key={item} src={URL + 'index/eva-'+item+'.png'}/>
+              })}
+            </div>
+          </div>
+        </section>
+        <section className={styles.indexBW}>
+          <div className="main">
+            <p>您离解决离您的铝材方案只有一个【联系我们】的距离</p>
+            <a href=""></a>
+          </div>
+        </section>
+        {/* <motion.div 
           style={box}
           animate={{ rotate: 360 }}
           transition={{ duration: 3 }}
-        />
+        /> */}
     </div>
   );
 }

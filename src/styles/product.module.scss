@@ -1,0 +1,34 @@
+@tailwind components;
+
+.productTag{
+  background-color: #CD241D;
+  div{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+  }
+  .tagWrap{
+    div{
+      flex-direction: column;
+      justify-content: center;
+      width: 120px;
+      height: 120px;
+      border-radius: 10px;
+      border: 2px solid #FFFFFF;
+      margin-right: 40px;
+      cursor: pointer;
+      img{
+        width: 50px;
+        margin: auto;
+      }
+    }
+    .activeDiv{
+      background-color: #fff;
+      color: #CD241D;
+      transition: var(--transition);
+      -webkit-transition: var(--webkit-transition);
+    }
+  }
+}

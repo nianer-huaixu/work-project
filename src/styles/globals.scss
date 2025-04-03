@@ -1,6 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+// @tailwind base;
+// @tailwind components;
+// @tailwind utilities;
 @import "tailwindcss";
 
 :root {
@@ -9,6 +9,7 @@
   --activeColor:#bb030f;
   --webkit-transition: all 0.3s linear;
   --transition: all 0.3s linear;
+  --headerHeight:80px;
 }
 
 @theme inline {
@@ -26,7 +27,7 @@
 }
 
 html{
-  font-size: 160px;
+  // font-size: 160px;
   font-family: Source Han Sans CN;
 }
 
@@ -55,12 +56,12 @@ header{
   width: 100%;
   position: fixed;
   top: 0;
-  height: 80px;
+  height: var(--headerHeight);
   color: #fff;
   font-size: 16px;
   line-height: 78px;
   z-index: 999;
-  background: linear-gradient(#000 0%,rgba(255,255,255,.2) 100%);;
+  background: linear-gradient(#000 0%,rgba(255,255,255,0) 80%);;
   .header-warp{
     display: flex;
     justify-content: space-between;
@@ -494,9 +495,14 @@ header{
   }
 }
 // 导航栏 end
-
+// banner
+.bannerWrap{
+  // margin-top: var(--headerHeight);
+}
 // footer start
 footer{
+  padding-top: 40px;
+  background: url('https://www.yangdong.co:8443/yangdong-new/footer/bg.png')no-repeat;
   .footer-wrap{
     display:flex;
     justify-content: space-between;

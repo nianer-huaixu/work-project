@@ -2,9 +2,7 @@
 import React from 'react'
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
-
 import { useRouter,usePathname } from 'next/navigation'
-
 
 // 导航栏一级菜单 start
 function MuneItem(props){
@@ -13,11 +11,11 @@ function MuneItem(props){
     {label:'首页',route:'/'},
     {label:'产品中心',route:'/product',isChildren:true},
     {label:'加工中心',route:'/process',isProcess:true},
-    {label:'应用领域',route:'/applicationfields',isApp:true},
-    {label:'行业方案',route:'/'},
+    {label:'应用领域',route:'/apply',isApp:true},
+    {label:'行业方案',route:'/case'},
     {label:'走进扬东',route:'/about'},
-    {label:'新闻资讯',route:'/news',isList:true},
-    {label:'联系我们',route:'/contactus'}
+    {label:'新闻资讯',route:'/new',isList:true},
+    {label:'联系我们',route:'/contact'}
   ]
   const muneItem = headData.map(item =>{
     return <li key={item.label} className={[('/'+path.split('/')[1]) == item.route?'menu-ul-li selectAcitve':'menu-ul-li'].join('')}>
